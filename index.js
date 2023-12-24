@@ -21,8 +21,9 @@ btn2.addEventListener('click', () => {
     
     box2[0].classList.add('hide')
     container[0].classList.remove('hide')
-    setInterval(makeSnow, 5000);
 })
+setInterval(makeSnow, 5000);
+
 const makeSnow = () => {
     const snow = document.createElement("div")
     const size = Math.random() + 7
@@ -36,5 +37,7 @@ const makeSnow = () => {
     
     snow.style.left = Math.random() * window.innerWidth * 2 + 'px'    
 container[0].appendChild(snow)
-
+setTimeout(() => {
+    snow.remove()
+}, 3000);
 }
