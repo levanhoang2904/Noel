@@ -279,7 +279,7 @@ body {
 
 @keyframes down {
     from    {
-        top: 0;
+        top: -30px;
     }
     to {
     top: 100vh

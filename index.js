@@ -11,7 +11,7 @@ btn.addEventListener('click', () => {
         mess[0].classList.add('hide')
         
         box2[0].classList.remove('hide')
-    }, 70000);
+    }, 72000);
     
 })
 
