@@ -37,7 +37,5 @@ const makeSnow = () => {
     
     snow.style.left = Math.random() * window.innerWidth * 2 + 'px'    
 container[0].appendChild(snow)
-setTimeout(() => {
-    snow.remove()
-}, 3000);
+
 }
