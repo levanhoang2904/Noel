@@ -270,10 +270,9 @@ body {
 }
 
 .snow {
-    size: 10cm;
     border-radius: 50%;
     position: absolute;
-    animation: down 2s  linear infinite;
+    animation: down 1s  linear infinite;
     background-color: white;
 }
 
