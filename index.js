@@ -3,10 +3,7 @@ const btn = document.getElementById('btn')
 console.log(btn)
 const box2 = document.getElementsByClassName('box2')
 btn.addEventListener('click', () => {
-    document.addEventListener('click', function() {
-        var audio = document.querySelector('audio');
-        audio.play();
-    });
+    
     const mess = document.getElementsByClassName("mess")
     btn.remove()
     mess[0].classList.remove('hide')
@@ -24,9 +21,7 @@ btn2.addEventListener('click', () => {
     
     box2[0].classList.add('hide')
     container[0].classList.remove('hide')
-for (let i = 0 ; i <= 100; i++) {
-    makeSnow();
-}
+    setInterval(makeSnow, 5000);l
 })
 const makeSnow = () => {
     const snow = document.createElement("div")
@@ -41,5 +36,7 @@ const makeSnow = () => {
     
     snow.style.left = Math.random() * window.innerWidth * 2 + 'px'    
 container[0].appendChild(snow)
-
+setTimeout(() => {
+    snow.remove()
+}, 3000);
 }
