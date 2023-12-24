@@ -21,7 +21,7 @@ btn2.addEventListener('click', () => {
     
     box2[0].classList.add('hide')
     container[0].classList.remove('hide')
-    setInterval(makeSnow, 5000);l
+    setInterval(makeSnow, 5000);
 })
 const makeSnow = () => {
     const snow = document.createElement("div")
