@@ -22,7 +22,10 @@ container[0].appendChild(snow)
 
 
 btn.addEventListener('click', () => {
-    
+    document.addEventListener('click', function() {
+        var audio = document.querySelector('audio');
+        audio.play();
+    });
     const mess = document.getElementsByClassName("mess")
     btn.remove()
     mess[0].classList.remove('hide')
